@@ -111,6 +111,7 @@ end
 
 --[[
 -- Example usage:
+HEAD
 local expr = "3 + 5 * (2 - 8)"
 local tokens = tokenize(expr)
 local postfix = infixToPostfix(tokens)
@@ -119,3 +120,9 @@ print("Expression:", expr)
 print("Tokens:", table.concat(tokens, ", "))
 print("Postfix:", table.concat(postfix, ", "))
 print("Result:", result)
+
+-- local expr = "3 + 5 * (2 - 8)"
+-- local tokens = tokenize(expr)            
+
+
+# NFT
