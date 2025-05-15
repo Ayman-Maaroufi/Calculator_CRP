@@ -16,6 +16,8 @@ local precedence = {
     ["+"] = 2, ["-"] = 2
 }
 
+
+
 local function infixToPostfix(tokens)
     local output, stack = {}, {}
     for _, token in ipairs(tokens) do
@@ -105,3 +107,7 @@ while true do
     end
     ::continue::
 end
+
+-- Example usage:
+-- local expr = "3 + 5 * (2 - 8)"
+-- local tokens = tokenize(expr)            
