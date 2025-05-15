@@ -108,6 +108,14 @@ while true do
     ::continue::
 end
 
+
+--[[
 -- Example usage:
--- local expr = "3 + 5 * (2 - 8)"
--- local tokens = tokenize(expr)            
+local expr = "3 + 5 * (2 - 8)"
+local tokens = tokenize(expr)
+local postfix = infixToPostfix(tokens)
+local result = evalPostfix(postfix)
+print("Expression:", expr)
+print("Tokens:", table.concat(tokens, ", "))
+print("Postfix:", table.concat(postfix, ", "))
+print("Result:", result)
